@@ -1,5 +1,7 @@
 # CI/CD with Kalix
 
+This project is a sample Javascript project using Kalix Github Actions support for CI/CD
+
 When pull request created:
 
 - run tests
