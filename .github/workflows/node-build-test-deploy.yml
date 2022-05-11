@@ -53,4 +53,4 @@ jobs:
           cmd: "services deploy person ${{ secrets.DOCKERHUB_USERNAME }}/person:${{ env.PERSON_VERSION }}"
         env:
           token: ${{ secrets.KALIX_TOKEN }}
-          project: ${{ secrets.KALIX_PROJECT_ID }}
+          project: ${{ secrets.KALIX_PROJECT }}
