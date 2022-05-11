@@ -1,5 +1,5 @@
-import akkaserverless from "@lightbend/akkaserverless-javascript-sdk";
-const ValueEntity = akkaserverless.ValueEntity;
+import kalix from "@kalix-io/kalix-javascript-sdk";
+const ValueEntity = kalix.ValueEntity;
 
 /**
  * Type definitions.
