@@ -1,4 +1,4 @@
-# CI/CD with Kalix
+# CI/CD with Kalix 
 
 This project is a sample JavaScript project using Kalix Github Actions support for CI/CD
 
