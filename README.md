@@ -23,4 +23,4 @@ Fully parmaterized with:
 - Kalix token
 - Kalix project ID
 
-For more information: https://docs.kalix.io/projects/integrate-cicd-github-actions.html
+For more information: https://docs.kalix.io/operations/integrate-cicd-github-actions.html
