@@ -47,10 +47,10 @@ jobs:
         with:
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/person:${{ env.PERSON_VERSION }}
-      - name: Kalix Deploy
-        uses: lightbend/kalix-action@v7
+      - name: Install Kalix CLI
+        uses: lightbend/setup-kalix-action@v1
         with:
-          cmd: "services deploy person ${{ secrets.DOCKERHUB_USERNAME }}/person:${{ env.PERSON_VERSION }}"
-        env:
           token: ${{ secrets.KALIX_TOKEN }}
-          project: ${{ secrets.KALIX_PROJECT_ID }}
+          project-id: ${{ vars.KALIX_PROJECT_ID }}
+      - name: Kalix Deploy
+        run: kalix services deploy person ${{ secrets.DOCKERHUB_USERNAME }}/person:${{ env.PERSON_VERSION }}
